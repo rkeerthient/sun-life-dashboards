@@ -72,6 +72,7 @@ export const config: TemplateConfig = {
     ],
     filter: {
       entityTypes: ["financialProfessional"],
+      entityIds: ["1076782705-test"],
     },
     localization: {
       locales: ["en"],
@@ -185,7 +186,7 @@ const Dashboards: Template<TemplateRenderProps> = ({ document }) => {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-screen">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-[#015c93]"></div>
       </div>
     );
   }
@@ -227,7 +228,7 @@ const Dashboards: Template<TemplateRenderProps> = ({ document }) => {
                 id="tabs"
                 value={currentTab}
                 onChange={(e) => setCurrentTab(e.target.value)}
-                className="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 focus:border-black focus:outline-none focus:ring-[#4492d3]"
+                className="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 focus:border-black focus:outline-none focus:ring-[#015c93]"
               >
                 {tabs.map((tab) => (
                   <option key={tab} value={tab}>
@@ -253,8 +254,8 @@ const Dashboards: Template<TemplateRenderProps> = ({ document }) => {
                     )}
                     style={{
                       borderColor:
-                        currentTab === tab ? "#1f66e0" : "transparent",
-                      color: currentTab === tab ? "#003da5" : undefined,
+                        currentTab === tab ? "#015c93" : "transparent",
+                      color: currentTab === tab ? "#015c93" : undefined,
                     }}
                   >
                     {tab}

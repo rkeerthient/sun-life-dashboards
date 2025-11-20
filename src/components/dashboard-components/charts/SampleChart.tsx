@@ -32,7 +32,7 @@ const centerTextPlugin: Plugin<"doughnut"> = {
     const textX = Math.round((width - ctx.measureText(text).width) / 2);
     const textY = height / 2;
 
-    ctx.fillStyle = "#111827";
+    ctx.fillStyle = "#015c93";
     ctx.fillText(text, textX, textY);
     ctx.save();
   },
@@ -49,7 +49,7 @@ const SampleChart = ({ completionPercentage, color }: SampleChartProps) => {
     datasets: [
       {
         data: [completionPercentage, 100 - completionPercentage],
-        backgroundColor: ["rgb(31, 102, 224)", "#e5e7eb"],
+        backgroundColor: ["#015c93", "#e5e7eb"],
         borderWidth: 0,
       },
     ],

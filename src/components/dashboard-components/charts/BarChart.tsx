@@ -63,7 +63,7 @@ export const data = {
     {
       label: "Listings Impressions",
       data: labels.map(() => generateRandomData()),
-      borderColor: "rgb(255, 99, 132)",
+      borderColor: "#015c93",
       backgroundColor: "rgba(255, 99, 132, 0.5)",
     },
     {

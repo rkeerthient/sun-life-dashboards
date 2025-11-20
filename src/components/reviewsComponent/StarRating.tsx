@@ -5,7 +5,7 @@ const StarRating = ({ selectedStars = 3 }: any) => {
   const firstMethod = () => {
     return [...Array(totalStars)].map((el, i: any) =>
       i < selectedStars ? (
-        <i key={i} className="fa fa-star text-[#1F66E0]" />
+        <i key={i} className="fa fa-star text-[#015c93]" />
       ) : (
         <i key={i} className="fa fa-star-o" />
       )
@@ -15,9 +15,9 @@ const StarRating = ({ selectedStars = 3 }: any) => {
   const secondMethod = () => {
     return [...Array(totalStars)].map((el, i: any) =>
       i < selectedStars && i + 1 > selectedStars ? (
-        <i key={i} className="fa fa-star-half-o text-[#1F66E0]" />
+        <i key={i} className="fa fa-star-half-o text-[#015c93]" />
       ) : i < selectedStars ? (
-        <i key={i} className="fa fa-star text-[#1F66E0]" />
+        <i key={i} className="fa fa-star text-[#015c93]" />
       ) : (
         <i key={i} className="fa fa-star-o" />
       )
