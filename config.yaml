@@ -1,0 +1,24 @@
+buildConfiguration:
+  buildCommand: npm run build
+  installDependenciesStep:
+    command: npm install
+    requiredFiles:
+      - package.json
+      - package-lock.json
+      - .npmrc
+livePreviewConfiguration:
+  setupCommand: ":"
+siteStream:
+  id: dashboard
+  fields:
+    - name
+    - richTextDescriptionV2
+    - c_taskGroups
+    - c_termsAndConditions
+  localization:
+    locales:
+      - en
+    primary: false
+  entityId: agentsDashboardSite
+authentication:
+  policyName: pages-auth-policy
