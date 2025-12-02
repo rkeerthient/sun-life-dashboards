@@ -97,6 +97,7 @@ export const PROFILE_COMPLETENESS_FIELDS = [
   { key: "certifications", label: "Certifications" },
   { key: "brands", label: "Brands" },
   { key: "specialities", label: "Specialities" },
+  { key: "hobbies", label: "Hobbies" },
 ];
 export interface InsightItem {
   id: number;
