@@ -39,7 +39,7 @@ const Banner = ({
         <div className="bg-slate-200 px-4 py-2 rounded-md text-gray-800 font-semibold text-xs">
           <a
             target="_blank"
-            href={`https://www.yext.com/s/4511123/yextsites/161605/branches/131733/editor#pageSetId=professional-pages&locale=en&themeId=sunlife-pfm&entityId=${docId}`}
+            href={`https://www.yext.com/s/4511123/yextsites/161605/branches/131733/editor#pageSetId=professional-pages&locale=en&themeId=sunlife-pfm&entityId=${docId}&assignment=ENTITY`}
             type="button"
           >
             Edit Page
